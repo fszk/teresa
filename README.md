@@ -9,24 +9,24 @@ Files are retrieved and organized in a systematic way by folders:<br>
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2018_maggio/data/
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2022/data/
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2023/data/
-<br>
+<br><br>
 glider_microstructure_data_conversion.m<br>
 Then .p files are converted to .mat files with the ODAS Toolbox from RSI.<br>
 The .mat files contain all the measurements converted from voltage to physically readable values.  
 
 ## Step Beta
-teresa_microrider.ipynb<br>
+teresa_microrider.ipynb<br><br>
 Files are listed:<br>
 liste_P.txt : list of .P <br>
 liste_M.txt : list of .mat <br>
 liste_F.txt : list of failed conversions <br>
-<br>
+<br><br>
 : 657 x .mat files<br>
 total of  601 Go of .mat<br>
-<br>
+<br><br>
 : 922 x .P files<br>
 total of  99  Go of .P files<br>
-<br>
+<br><br>
 A metadata file (META.csv) is created from the scan of each .mat file, where each line contains<br>
 meta = [fn,fnshort,date,time,N_slow,N_fast,delta_t,
         P_min, P_max, P_mean,P_std,
@@ -50,9 +50,9 @@ meta = [fn,fnshort,date,time,N_slow,N_fast,delta_t,
 ## Step Gamma
 quick_epsilon.m<br>
 calculate_epsilon.m<br>
-<br>
+<br><br>
 The liste_M.txt is used to loop over each .mat file and produce values of epsilon, the turbulent kinetic energy dissipation rates (W/kg). <br>
-<br>
+<br><br>
 General parameters are applied<br>
 %% 
 % spikes
@@ -71,11 +71,11 @@ N_segment_fft = 2 ;
 N_window_fft = 3 ;
 Percent_overlap_fft = 50./100 ; % round(Percent_overlap_fft.* (diss_info.fft_length) )
 
-<br>
+<br><br>
 Values are conserved through a matlab structure QUICK_EPSILON for each file.<br>
 PROJECT_DATAFILENAME_DATE_TIME.mat<br>
 e.g. TERESA_microrider_DAT_008_2018-04-23_11-17.mat<br>
-<br>
+<br><br>
 QUICK_EPSILON.profileNumber  = N ; %------------------ to be discarded, yoyo are now processed as a unique vector<br>
 QUICK_EPSILON.totalProfiles  = N_profiles ; %--------  to be discarded, yoyo are now processed as a unique vector<br>
 QUICK_EPSILON.date_profile = date_profile ;<br>

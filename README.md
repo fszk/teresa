@@ -1,7 +1,7 @@
 # Teresa
 
 ## Step Alpha
-Files are retrieved and organized in a systematic way by folders:
+Files are retrieved and organized in a systematic way by folders:<br>
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2015_agosto/data/
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2015_july/data/
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2017_marzo_aprile/data/
@@ -9,13 +9,13 @@ Files are retrieved and organized in a systematic way by folders:
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2018_maggio/data/
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2022/data/
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2023/data/
-
+<br>
 glider_microstructure_data_conversion.m<br>
 Then .p files are converted to .mat files with the ODAS Toolbox from RSI.<br>
 The .mat files contain all the measurements converted from voltage to physically readable values.  
 
 ## Step Beta
-### teresa_microrider.ipynb
+teresa_microrider.ipynb<br>
 Files are listed:<br>
 liste_P.txt : list of .P <br>
 liste_M.txt : list of .mat <br>
@@ -26,7 +26,7 @@ total of  601 Go of .mat<br>
 <br>
 : 922 x .P files<br>
 total of  99  Go of .P files<br>
-
+<br>
 A metadata file (META.csv) is created from the scan of each .mat file, where each line contains<br>
 meta = [fn,fnshort,date,time,N_slow,N_fast,delta_t,
         P_min, P_max, P_mean,P_std,
@@ -48,9 +48,9 @@ meta = [fn,fnshort,date,time,N_slow,N_fast,delta_t,
 
 
 ## Step Gamma
-### quick_epsilon.m
-### calculate_epsilon.m
-
+quick_epsilon.m<br>
+calculate_epsilon.m<br>
+<br>
 The liste_M.txt is used to loop over each .mat file and produce values of epsilon, the turbulent kinetic energy dissipation rates (W/kg). <br>
 <br>
 General parameters are applied<br>

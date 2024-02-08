@@ -1,6 +1,6 @@
 # Teresa
 
-## Step Alpha: organizing and sorting files / data conversion
+## Step Alpha: organizing and sorting files / data conversion 
 Files are retrieved and organized in a systematic way by folders:<br>
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2015_agosto/data/
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2015_july/data/

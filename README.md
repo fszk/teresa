@@ -1,6 +1,6 @@
 # Teresa
 
-## Step Alpha
+## Step Alpha: organizing and sorting files / data conversion
 Files are retrieved and organized in a systematic way by folders:<br>
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2015_agosto/data/
 /Volumes/DENISE/data/glider/teresa/data/teresa_microrider_2015_july/data/
@@ -14,7 +14,7 @@ glider_microstructure_data_conversion.m<br>
 Then .p files are converted to .mat files with the ODAS Toolbox from RSI.<br>
 The .mat files contain all the measurements converted from voltage to physically readable values.  
 
-## Step Beta
+## Step Beta: metadata
 teresa_microrider.ipynb<br><br>
 Files are listed:<br>
 liste_P.txt : list of .P <br>
@@ -47,7 +47,7 @@ meta = [fn,fnshort,date,time,N_slow,N_fast,delta_t,
         setupfilestr]
 
 
-## Step Gamma
+## Step Gamma: a quick estimation of epsilon values
 quick_epsilon.m<br>
 calculate_epsilon.m<br>
 <br><br>

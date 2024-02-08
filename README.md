@@ -71,7 +71,7 @@ freq_LP_cut      = 0.1 ;  %   % default_HP_cut % frequency [Hz] of low-pass  fil
 segment_fft = [] ;   % default will be 1m % Ndata1m_fast, around 1400 data
 N_segment_fft = 2 ;
 %N_window_fft = 2 ; % N x (N_segment_fft x segment_fft)
-N_window_fft = 3 ;
+N_window_fft = 2 ;
 Percent_overlap_fft = 50./100 ; % round(Percent_overlap_fft.* (diss_info.fft_length) )
 
 <br><br>

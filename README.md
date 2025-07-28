@@ -24,4 +24,7 @@ This code is released under the [MIT License](LICENSE), allowing unrestricted us
 
 ## How to cite
 
-After releasing a version on GitHub and synchronizing with Zenodo, a DOI will be generated here.
+If you use this code, please cite:
+
+Kokoszka, F. V. M., et al. (2025). Glider Microstructure Turbulence Processing Code. Zenodo. 10.5281/zenodo.16541936
+https://zenodo.org/records/16541936
